@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Car Management System</title>
+	<link rel="stylesheet" type="text/css" href="car.css">
+    <style>
+        body {
+	font-family: Arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-style: italic;
+	text-shadow: #b1a1a3;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+label {
+	margin-bottom: 5px;
+}
+
+input {
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+button {
+	padding: 5px;
+	background-color: #b1a1a3;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+table {
+	margin-top: 20px;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid grey;
+}
+
+tr:hover {
+	background-color: #f5f5f5;
+}
+    </style>
+</head>
+<body>
+	<h1>Car Management System</h1>
+	<form id="car-form">
+		<label for="id">Car ID:</label>
+		<input type="text" id="id" name="id" required>
+
+		<label for="name">Car Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="color">Car Color:</label>
+		<input type="text" id="color" name="color" required>
+
+		<label for="price">Car Price:</label>
+		<input type="number" id="price" name="price" required>
+
+		<button type="submit">Add Car</button>
+	</form>
+
+  <br/>
+	<!-- <button id="getCars" >Get All Cars</button> -->
+    
+	<table id="car-table">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Color</th>
+				<th>Price</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="/js/car.js"></script>
+</body>
+</html>
